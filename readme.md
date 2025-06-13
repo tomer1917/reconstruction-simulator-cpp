@@ -11,7 +11,9 @@ This repository contains a C++ implementation of a reconstruction simulator for 
 ```
 ├── docs/
 │   └── assignment1-spec.pdf        # Original assignment specification
-├── include/                        # Header files
+├── configs/                       # Simulation configuration files
+│   └── example_config.txt         # Sample config demonstrating syntax
+├── include/                       # Header files
 │   ├── Action.h
 │   ├── Auxiliary.h
 │   ├── Facility.h
@@ -19,7 +21,7 @@ This repository contains a C++ implementation of a reconstruction simulator for 
 │   ├── SelectionPolicy.h
 │   ├── Settlement.h
 │   └── Simulation.h
-├── src/                            # Source files
+├── src/                           # Source files
 │   ├── Action.cpp
 │   ├── Auxiliary.cpp
 │   ├── Facility.cpp
@@ -28,8 +30,8 @@ This repository contains a C++ implementation of a reconstruction simulator for 
 │   ├── Settlement.cpp
 │   ├── Simulation.cpp
 │   └── main.cpp
-├── makefile                        # Builds executable into bin/
-└── README.md                       # Project overview and instructions
+├── makefile                       # Builds executable into bin/
+└── README.md                      # Project overview and instructions
 ```
 
 ---
@@ -59,6 +61,7 @@ This will compile all sources into the `bin/` directory and produce the `simulat
 ```sh
 bin/simulation <path/to/config.txt>
 ```
+
 After startup, interact via commands:
 
 - `step N`              : Advance simulation by N steps
