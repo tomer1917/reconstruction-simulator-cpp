@@ -1,0 +1,13 @@
+# Build output
+bin/
+*.o
+*.out
+
+# Make artifacts
+*.d
+*.cmd
+
+# IDE / editor settings
+.vscode/
+*.swp
+*~
